@@ -1,0 +1,153 @@
+  
+@keyframes an{
+  from{
+    
+  
+    
+  background-color:black;
+  color: white;
+  }
+  to{
+   
+  background-color: white;
+  color: black;
+  }
+
+}
+
+@keyframes colorchange2 {
+  0% {
+    background: #6DCEE1;
+   
+  }
+  14% {
+    background: #5ED0E6;
+   
+    
+  }
+  28% {
+    background-color: #51BED3;
+    
+  }
+  42% {
+    background: #42B8CF;
+    
+  }
+  56% {
+    background: #34ACC4;
+   
+  }
+  70% {
+    background: #24B8D5;
+    
+  }
+  84% {
+    background: #19B9D9;
+    
+  }
+  100% {
+    background: #0CD2F9;
+   
+  }
+}
+  *{
+    font-family:Varela Round;
+/*     border: 2px solid black; */
+  }
+  img{
+    width: 100%;
+  }
+  #log{
+    
+    text-align: center;
+    align-content: center;
+    
+   
+  }
+    body{
+ 
+ background-color: #65c6c4;
+     
+     background-size: 100% ;
+    }
+    
+    #da{
+      display: inline;
+      
+      margin: unset;
+      
+    }
+    #m{
+     position: absolute;
+      right: 0;
+      padding-right:  15px;
+    }
+    
+    #sdiv{
+      text-align: center;
+      align-items: center;
+      
+    }
+   .txt{
+     border-radius: 25px;
+     width: 31px;
+     transition: all cubic-bezier(0.74, -0.01, 0.42, 0.85) 1s;
+     height: 15px;
+     background-color: #78E5D9;
+     border: 2px solid white;
+     animation: colorchange2 3s alternate  infinite ;
+   }
+   .txt:hover{
+     width:60vw;
+     background-color: #58969F;
+     height: 25px;
+     outline-color: black;
+     filter: drop-shadow(0 0 0.7rem rgb(100, 40, 210));
+   }
+   #sb{
+    border: 2px solid black;
+     display: none;
+     margin: auto;
+     
+   }
+   #m{
+     transition: all cubic-bezier(0.74, -0.01, 0.42, 0.85) 2s ;
+  
+
+  
+    overflow:hidden ;
+  
+   }
+ 
+  .n{
+    padding: 10px;
+    display: inline-block;
+  }
+  #iframe{
+    width: 100vw;
+  }
+ #cus{
+   filter: drop-shadow(0 0 0.7rem rgb(160, 40, 210));
+ }
+#nav{
+  background-color: #6ff8ee
+;
+  color: #b0c3c2b9;
+  height: 30px;
+  
+  align-content: center;
+  
+}
+#crick{
+  margin-top: 20px;
+}
+#ting{
+  text-align: center;
+ align-content: center;
+ 
+ display: inline;
+}
+
+
+
+
