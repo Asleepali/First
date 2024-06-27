@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="custom.css">
+</head>
+<body onload="greet()">
+  <div id="nav">
+ 
+    <p id="da" class="navele">Home</p>
+    
+    <span id="m" class="navele">
+   Setting
+    </span>
+  </div>
+    <div id="ting">
+    <p id="gree" class="navele"></p>
+      
+    </div>
+  
+  
+  <div id="log">
+    
+  <img src="custom.png" width="80vw" id="cus">
+  </div>
+  <div id="sdiv">
+    
+  
+    <input type="textbox" class="txt"
+    ondblclick="sre()"  placeholder="hello"
+    >
+
+    
+  </div>
+<iframe src="https://bwidget.crictimes.org/" style="width:100%;min-height: 250px;" frameborder="0" scrolling="yes" id="crick"></iframe>
+<script>
+    let q=document.querySelector('.txt');
+    function sre(){
+      let url='https://google.com/search?q='+q.value;
+      window.open(url);
+      
+    }
+    
+    
+ const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const d = new Date();
+let day = days[d.getDay()];
+    console.log(day);
+   
+   document.getElementById("da").innerHTML = day;
+   function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+function display_ct() {
+var x = new Date()
+var x1 =   x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
+document.getElementById('ani').innerHTML = x1;
+display_c();
+ }
+ 
+   let va=true;
+
+ function greet(){
+   let hr=d.getHours();
+   let v=document.getElementById("gree");
+ console.log(hr);
+ if(hr<12){
+   v.innerHTML="Good morning";
+   
+ }else if(hr>12&&hr<4){
+   
+   v.innerHTML="Good afternoon";
+ }
+ else{
+   v.innerHTML="Good evening";
+   
+ }
+ 
+ }
+  </script>
+</body>
+</html>
