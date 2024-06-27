@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello, world!</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+ <style>
+     
+@keyframes an{
+  from{
+    
+  
+    
+  background-color:black;
+  color: white;
+  }
+  to{
+   
+  background-color: white;
+  color: black;
+  }
+
+}
+
+@keyframes colorchange2 {
+  0% {
+    background: #6DCEE1;
+   
+  }
+  14% {
+    background: #5ED0E6;
+   
+    
+  }
+  28% {
+    background-color: #51BED3;
+    
+  }
+  42% {
+    background: #42B8CF;
+    
+  }
+  56% {
+    background: #34ACC4;
+   
+  }
+  70% {
+    background: #24B8D5;
+    
+  }
+  84% {
+    background: #19B9D9;
+    
+  }
+  100% {
+    background: #0CD2F9;
+   
+  }
+}
+  *{
+    font-family:Varela Round;
+/*     border: 2px solid black; */
+  }
+  img{
+    width: 100%;
+  }
+  #log{
+    
+    text-align: center;
+    align-content: center;
+    
+   
+  }
+    body{
+ 
+ background-color: #65c6c4;
+     
+     background-size: 100% ;
+    }
+    
+    #da{
+      display: inline;
+      
+      margin: unset;
+      
+    }
+    #m{
+     position: absolute;
+      right: 0;
+      padding-right:  15px;
+    }
+    
+    #sdiv{
+      text-align: center;
+      align-items: center;
+      
+    }
+   .txt{
+     border-radius: 25px;
+     width: 31px;
+     transition: all cubic-bezier(0.74, -0.01, 0.42, 0.85) 1s;
+     height: 15px;
+     background-color: #78E5D9;
+     border: 2px solid white;
+     animation: colorchange2 3s alternate  infinite ;
+   }
+   .txt:hover{
+     width:60vw;
+     background-color: #58969F;
+     height: 25px;
+     outline-color: black;
+     filter: drop-shadow(0 0 0.7rem rgb(100, 40, 210));
+   }
+   #sb{
+    border: 2px solid black;
+     display: none;
+     margin: auto;
+     
+   }
+   #m{
+     transition: all cubic-bezier(0.74, -0.01, 0.42, 0.85) 2s ;
+  
+
+  
+    overflow:hidden ;
+  
+   }
+ 
+  .n{
+    padding: 10px;
+    display: inline-block;
+  }
+  #iframe{
+    width: 100vw;
+  }
+ #cus{
+   filter: drop-shadow(0 0 0.7rem rgb(160, 40, 210));
+ }
+#nav{
+  background-color: #6ff8ee
+;
+  color: #b0c3c2b9;
+  height: 30px;
+  
+  align-content: center;
+  
+}
+#crick{
+  margin-top: 20px;
+}
+#ting{
+  text-align: center;
+ align-content: center;
+ 
+ display: inline;
+}
+
+
+
+
+
+ </style>
+</head>
+<body onload="greet()">
+  <div id="nav">
+ 
+    <p id="da" class="navele">Home</p>
+    
+    <span id="m" class="navele">
+   Setting
+    </span>
+  </div>
+    <div id="ting">
+    <p id="gree" class="navele"></p>
+      
+    </div>
+  
+  
+  <div id="log">
+    
+  <img src="custom.png" width="80vw" id="cus">
+  </div>
+  <div id="sdiv">
+    
+  
+    <input type="textbox" class="txt"
+    ondblclick="sre()"  placeholder="hello"
+    >
+
+    
+  </div>
+<iframe src="https://bwidget.crictimes.org/" style="width:100%;min-height: 250px;" frameborder="0" scrolling="yes" id="crick"></iframe>
+<script>
+    let q=document.querySelector('.txt');
+    function sre(){
+      let url='https://google.com/search?q='+q.value;
+      window.open(url);
+      
+    }
+    
+    
+ const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const d = new Date();
+let day = days[d.getDay()];
+    console.log(day);
+   
+   document.getElementById("da").innerHTML = day;
+   function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+function display_ct() {
+var x = new Date()
+var x1 =   x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds();
+document.getElementById('ani').innerHTML = x1;
+display_c();
+ }
+ 
+   let va=true;
+
+ function greet(){
+   let hr=d.getHours();
+   let v=document.getElementById("gree");
+ console.log(hr);
+ if(hr<12){
+   v.innerHTML="Good morning";
+   
+ }else if(hr>12&&hr<4){
+   
+   v.innerHTML="Good afternoon";
+ }
+ else{
+   v.innerHTML="Good evening";
+   
+ }
+ 
+ }
+  </script>
+</body>
+</html>
